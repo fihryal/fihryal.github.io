@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Responsive Testimonial Slider</title>-->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="card.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+	<div class="banner-7">
+
+		<div class="card-7">
+			<div class="left-column background1-left-column">
+				<h6>Control de versiones</h6>
+				<h2>GitHub</h2>
+				<i class="fa fa-github"></i>
+			</div>
+
+			<div class="right-column">
+				<div>
+					<h4>Dificultad</h4>
+					<h6>Baja - Media</h6>
+
+				</div>
+				<h2>Aprende GitHub en 3 semanas</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sintLorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Harum, sint??</p>
+				<button class="button-7 background1-left-column">Empezar</button>
+			</div>
+
+		</div>
+
+		<div class="card-7">
+			<div class="left-column background2-left-column">
+				<h6>Programación</h6>
+				<h2>Android</h2>
+				<i class="fa fa-android" aria-hidden="true"></i>
+			</div>
+
+			<div class="right-column">
+				<div>
+					<h4>Dificultad</h4>
+					<h6>Media - Alta</h6>
+				</div>
+				<h2>Flutter en 1 año</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, sintLorem ipsum dolor sit amet,
+					consectetur adipisicing elit. Harum, sint??</p>
+				<button class="button-7 background2-left-column">Empezar</button>
+			</div>
+
+		</div>
+	</div>
+
+    <!-- Swiper JS -->
+
+    <script type="text/javascript">
+      var text = document.getElementById('text')
+        var shadow = '';
+        for(var i = 0; i < 500; i++)
+        {
+            shadow +=(shadow? ',':'')+ i*1+'px '+ i*1+'px 0 #01ded3';
+        }
+        text.style.textshadow = shadow;
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="js/card.js"></script>
+  </body>
+</html>
