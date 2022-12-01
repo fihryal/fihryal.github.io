@@ -10,6 +10,7 @@ html {
     box-sizing: border-box;
 }
 
+
 body {
     overflow-x: hidden;
     color: white;
@@ -731,6 +732,7 @@ figure:after {
 
 .container-glass {
     margin: 20px;
+    margin-left: 130px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -908,7 +910,7 @@ figure:after {
     align-items: center;
 
     min-height: 100vh;
-    background-color: #D7CCC8;
+    background-color: #514c9cff;
 
 }
 
@@ -962,7 +964,7 @@ figure:after {
 }
 
 .div:nth-child(2) {
-    background: #D7CCC8;
+    background: #514c9cff;
     text-decoration: none;
     box-sizing: border-box;
     border: none;
@@ -979,12 +981,12 @@ figure:after {
 }
 
 .div:nth-child(4) {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Raleway", Arial, sans-serif;
-    background: beige;
+    background: #514c9cff;
 }
 
 
@@ -1019,7 +1021,7 @@ figure:after {
     align-items: center;
     min-height: 100vh;
     width: auto;
-    background: #D7CCC8;
+    background: #514c9cff;
 }
 
 :root {
@@ -1416,7 +1418,7 @@ figure:after {
         margin: 50px;
     }
     .div:nth-child(4) {
-        height: 140vh;
+        height: 190vh;
     }
 }
 
@@ -1430,7 +1432,7 @@ figure:after {
         margin: 50px;
     }
     .div:nth-child(4) {
-        height: 340vh;
+        height: 280vh;
     }
 }
 @media only screen and (max-width:425px) {
@@ -1438,6 +1440,269 @@ figure:after {
         margin: 50px;
     }
     .div:nth-child(4) {
-        height: 350vh;
+        height: 280vh;
     }
 }
+
+/* @media screen and (max-width:412px){
+    .banner{
+        width: 45vh;
+    }
+
+    .content{
+        width: 45vh;
+    }
+
+    .banner-4{
+        width: 45vh;
+    }
+
+    .banner-6{
+        width: 45vh;
+    }
+
+    .card-7{
+        margin: 20px;
+    }
+
+    .div:nth-child(2) {
+        width: 70vw;
+    }
+} */
+
+.banner-10{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1d1d4f;
+}
+
+.h1-10{
+    padding-top: 15%;
+}
+
+.h2-10{
+    margin-top: 40px;
+}
+
+#slider {
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+    
+ }
+ #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background-image: url("https://img.freepik.com/free-photo/complex-aerial-view-city_23-2148975282.jpg?w=1800&t=st=1669864550~exp=1669865150~hmac=3fffa2dffb7f967867bc038aef36e17ca8b4344d510c82de596e94c3739aba0c");
+    background-size: cover;
+}
+ #slides .slide_2 {
+    background-image: url("https://img.freepik.com/free-photo/complex-aerial-view-city_23-2148975282.jpg?w=1800&t=st=1669864550~exp=1669865150~hmac=3fffa2dffb7f967867bc038aef36e17ca8b4344d510c82de596e94c3739aba0c");
+    background-size: cover;
+}
+ #slides .slide_3 {
+    background-image: url("https://img.freepik.com/free-photo/complex-aerial-view-city_23-2148975282.jpg?w=1800&t=st=1669864550~exp=1669865150~hmac=3fffa2dffb7f967867bc038aef36e17ca8b4344d510c82de596e94c3739aba0c");
+    background-size: cover; 
+}
+ #slides .slide_4 {
+    background-image: url("https://img.freepik.com/free-photo/complex-aerial-view-city_23-2148975282.jpg?w=1800&t=st=1669864550~exp=1669865150~hmac=3fffa2dffb7f967867bc038aef36e17ca8b4344d510c82de596e94c3739aba0c");
+    background-size: cover; 
+}
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url('https://img.freepik.com/free-photo/complex-aerial-view-city_23-2148975282.jpg?w=1800&t=st=1669864550~exp=1669865150~hmac=3fffa2dffb7f967867bc038aef36e17ca8b4344d510c82de596e94c3739aba0c') no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url('img/dasarweb.png') no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
+
+.container-11 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.card-11 {
+    display: flex;
+    position: static;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ece9e6;
+    background: gray
+}
+
+.img-11 {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    position: static;
+}
+
+.card-body-11 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+
+.tag+.tag {
+    margin-left: 0.5em;
+}
+
+.tag-blue {
+    background: #56ccf2;
+    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    color: #fafafafa;
+}
+
+.card-body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card-footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.user {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-image {
+    border-radius: 50%;
+}
+
+.user-info>small {
+    color: #666;
+}
+
