@@ -910,7 +910,7 @@ figure:after {
     align-items: center;
 
     min-height: 100vh;
-    background-color: #514c9cff;
+    background-color: #1d1d4f;
 
 }
 
@@ -964,7 +964,7 @@ figure:after {
 }
 
 .div:nth-child(2) {
-    background: #514c9cff;
+    background: #1d1d4f;
     text-decoration: none;
     box-sizing: border-box;
     border: none;
@@ -986,7 +986,7 @@ figure:after {
     justify-content: center;
     align-items: center;
     font-family: "Raleway", Arial, sans-serif;
-    background: #514c9cff;
+    background: #1d1d4f;
 }
 
 
@@ -1021,7 +1021,7 @@ figure:after {
     align-items: center;
     min-height: 100vh;
     width: auto;
-    background: #514c9cff;
+    background: #1d1d4f;
 }
 
 :root {
@@ -1334,7 +1334,7 @@ figure:after {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #514c9cff;
+    background-color: #1d1d4f;
 }
 
 
